@@ -1,49 +1,35 @@
-Hotel Performance Analysis and Optimization
+Summary of Retinopathy Disease Prediction Using Machine Learning
+1. Data Overview
+The dataset used for predicting retinopathy consists of 6,000 patient records, with the following features:
 
-Summary:
-The hospitality industry is highly competitive, with success depending on the effective management of bookings, room availability, customer satisfaction, and revenue. 
-This business case outlines how the analysis of the provided datasets—dim_date, dim_hotels, dim_rooms, fact_aggregated_bookings, and fact_bookings—can be leveraged to gain insights into hotel performance, optimize operations, and improve profitability. 
-The key objectives are to analyze booking trends, optimize room utilization, assess customer satisfaction, and maximize revenue realization.
+Age: The patient's age.
+Systolic Blood Pressure: The pressure in the arteries when the heart beats.
+Diastolic Blood Pressure: The pressure in the arteries when the heart rests between beats.
+Cholesterol: The cholesterol level.
+Has Retinopathy: The target variable indicating the presence (1) or absence (0) of retinopathy.
+The data was clean, with no duplicates or missing values.
 
-I'm excited to share my latest analytical project, "Booking Revenue Optimization," leveraging multiple datasets to deliver actionable insights for the hospitality industry.
-This project focuses on analyzing booking patterns, revenue generation, and customer behavior across different hotel properties. Using comprehensive data sets, I've developed a detailed overview of key metrics like booking trends, revenue optimization, customer segmentation, and service quality enhancement.
+2. Exploratory Data Analysis (EDA)
+Several visualizations were created to understand the distribution of features and their relationships:
 
-Here’s an overview of the project:
+Histograms were plotted to show the distributions of age, systolic and diastolic blood pressure, and cholesterol.
+A correlation matrix was used to examine the relationships between the features.
+Scatter plots were generated to visualize the relationships between age, blood pressure, cholesterol, and the presence of retinopathy.
+A count plot and a pie chart illustrated the distribution of the target variable (has_retinopathy), showing the proportion of patients with and without retinopathy.
+3. Model Building
+Four machine learning models were built and evaluated:
 
-📊 Key Features of the Analysis:
+Logistic Regression
+Support Vector Classifier (SVC)
+Decision Tree Classifier
+Random Forest Classifier
+The data was split into training and testing sets (70% training, 30% testing). Feature scaling was applied using StandardScaler to normalize the data for models like Logistic Regression and SVC.
 
-🔹 Revenue Optimization: Detailed analysis of booking trends and cancellation patterns to identify opportunities for maximizing revenue across different room categories and hotel properties.
+4. Model Evaluation
+The models were evaluated based on their accuracy scores on the test set:
 
-🔹 Customer Segmentation: Segmentation of customers based on booking patterns, room preferences, and demographics to tailor marketing efforts and improve customer retention.
-
-🔹 Capacity Management: Optimization of room allocation and inventory management, ensuring efficient utilization of resources during peak and off-peak periods.
-
-🔹 Service Quality Improvement: Analysis of customer ratings and feedback to identify areas for improvement, driving higher satisfaction and repeat bookings.
-
-🔹 Booking Channel Analysis: Evaluation of booking platform performance to optimize the mix of channels and increase profitability.
-
-🎯 Key Insights:
-
-🔹 Increased Revenue: Implementation of dynamic pricing strategies led to a significant increase in revenue during high-demand periods.
-
-🔹 Improved Customer Satisfaction: Enhancements in service quality based on customer feedback resulted in higher satisfaction scores and increased customer loyalty.
-
-🔹 Optimized Resource Allocation: Better room allocation and inventory management reduced operational costs and improved efficiency.
-
-🔹 Enhanced Competitive Position: Data-driven insights provided a competitive edge, allowing for tailored services and promotional strategies that boosted market share.
-
-
-You can explore the detailed insights and findings from this project through the interactive dashboard 
-(https://app.powerbi.com/view?r=eyJrIjoiNTVjZjM1YjktMmVhOS00ZWJjLThhNDUtMjg4ODcwMmYxMmNlIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
-
-📌 Key Learnings from the Project:
-
-🔹 Developing Predictive Models for Demand Forecasting
-
-🔹 Implementing Dynamic Pricing Strategies 
-
-🔹 Creating Customer Segmentation for Targeted Marketing
-
-🔹 Designing Interactive Dashboards for Real-Time Monitoring 
-
-🔹 Enhancing Service Quality Through Data-Driven Feedback Analysis
+Logistic Regression: 50.2%
+SVC: 49.60%
+Decision Tree: 49.70%
+Random Forest: 48.80%
+A bar chart was created to compare the accuracy of each model, with Logistic Regression performing slightly better than the others.
