@@ -1,5 +1,7 @@
 Report for Neeraj Chopra's Javelin Throw Performance Analysis using Machine Learning 
+
 Objective:
+
 The purpose of this analysis is to examine and predict the performance of Neeraj Chopra in javelin throw events, utilizing various machine learning models and data analysis techniques. The goal is to understand the factors influencing his performance and to create predictive models for future events.
 
 Data Collection and Preprocessing:
@@ -11,6 +13,7 @@ Feature Engineering: Key features like throw distance, date of event, and compet
 Exploratory Data Analysis (EDA):
 
 Visualization:
+
 Line Plot: To visualize the trend of throw distances over time.
 Histogram: To understand the distribution of throw distances.
 Scatter Plot: To examine relationships between different features, such as event date and throw distance.
@@ -22,27 +25,33 @@ Linear Regression:
 
 A basic linear model to predict throw distance based on key features.
 Provided a straightforward interpretation of the relationship between features and the target variable.
+
 Decision Tree:
 
 A non-linear model that captures complex interactions between features.
 Useful in understanding how different factors like event type and weather conditions might influence performance.
+
 Random Forest:
 
 An ensemble model that combines multiple decision trees to improve prediction accuracy.
 Helped in reducing overfitting and provided feature importance metrics.
+
 Support Vector Machine (SVM):
 
 A powerful model that aims to find the optimal hyperplane for regression.
 Effective in handling non-linear relationships between features and throw distance.
+
 Model Evaluation:
 
 Performance Metrics:
 
 Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²) were used to evaluate model performance.
 Random Forest and SVM models showed the best results in terms of accuracy and generalizability.
+
 Cross-Validation:
 
 Ensured robustness of the models by splitting the data into training and testing sets multiple times.
+
 Conclusion:
 The analysis provided valuable insights into the factors affecting Neeraj Chopra's javelin throw performance. The Random Forest and SVM models emerged as the most reliable predictors for future performance, capturing both linear and non-linear relationships in the data. These models can be utilized to forecast performance in upcoming events and help in strategic decision-making for training and competition planning.
 
