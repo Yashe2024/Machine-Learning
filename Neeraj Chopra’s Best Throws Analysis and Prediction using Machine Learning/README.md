@@ -1,49 +1,52 @@
-Hotel Performance Analysis and Optimization
+Report for Neeraj Chopra's Javelin Throw Performance Analysis using Machine Learning 
+Objective:
+The purpose of this analysis is to examine and predict the performance of Neeraj Chopra in javelin throw events, utilizing various machine learning models and data analysis techniques. The goal is to understand the factors influencing his performance and to create predictive models for future events.
 
-Summary:
-The hospitality industry is highly competitive, with success depending on the effective management of bookings, room availability, customer satisfaction, and revenue. 
-This business case outlines how the analysis of the provided datasets—dim_date, dim_hotels, dim_rooms, fact_aggregated_bookings, and fact_bookings—can be leveraged to gain insights into hotel performance, optimize operations, and improve profitability. 
-The key objectives are to analyze booking trends, optimize room utilization, assess customer satisfaction, and maximize revenue realization.
+Data Collection and Preprocessing:
 
-I'm excited to share my latest analytical project, "Booking Revenue Optimization," leveraging multiple datasets to deliver actionable insights for the hospitality industry.
-This project focuses on analyzing booking patterns, revenue generation, and customer behavior across different hotel properties. Using comprehensive data sets, I've developed a detailed overview of key metrics like booking trends, revenue optimization, customer segmentation, and service quality enhancement.
+Data Source: Historical data of Neeraj Chopra's javelin throw performances was collected in CSV format.
+Data Parsing: The date field was converted to a standard datetime format for consistency.
+Handling Missing Data: Missing values were identified and handled using the dropna() function to ensure the integrity of the dataset.
+Feature Engineering: Key features like throw distance, date of event, and competition details were extracted and used for modeling. Label encoding was applied to categorical variables.
+Exploratory Data Analysis (EDA):
 
-Here’s an overview of the project:
+Visualization:
+Line Plot: To visualize the trend of throw distances over time.
+Histogram: To understand the distribution of throw distances.
+Scatter Plot: To examine relationships between different features, such as event date and throw distance.
+Correlation Analysis: The relationship between different variables was analyzed to identify potential predictors for the throw distance.
+Model Building:
+Several machine learning models were used to predict Neeraj Chopra's javelin throw performance:
 
-📊 Key Features of the Analysis:
+Linear Regression:
 
-🔹 Revenue Optimization: Detailed analysis of booking trends and cancellation patterns to identify opportunities for maximizing revenue across different room categories and hotel properties.
+A basic linear model to predict throw distance based on key features.
+Provided a straightforward interpretation of the relationship between features and the target variable.
+Decision Tree:
 
-🔹 Customer Segmentation: Segmentation of customers based on booking patterns, room preferences, and demographics to tailor marketing efforts and improve customer retention.
+A non-linear model that captures complex interactions between features.
+Useful in understanding how different factors like event type and weather conditions might influence performance.
+Random Forest:
 
-🔹 Capacity Management: Optimization of room allocation and inventory management, ensuring efficient utilization of resources during peak and off-peak periods.
+An ensemble model that combines multiple decision trees to improve prediction accuracy.
+Helped in reducing overfitting and provided feature importance metrics.
+Support Vector Machine (SVM):
 
-🔹 Service Quality Improvement: Analysis of customer ratings and feedback to identify areas for improvement, driving higher satisfaction and repeat bookings.
+A powerful model that aims to find the optimal hyperplane for regression.
+Effective in handling non-linear relationships between features and throw distance.
+Model Evaluation:
 
-🔹 Booking Channel Analysis: Evaluation of booking platform performance to optimize the mix of channels and increase profitability.
+Performance Metrics:
 
-🎯 Key Insights:
+Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²) were used to evaluate model performance.
+Random Forest and SVM models showed the best results in terms of accuracy and generalizability.
+Cross-Validation:
 
-🔹 Increased Revenue: Implementation of dynamic pricing strategies led to a significant increase in revenue during high-demand periods.
+Ensured robustness of the models by splitting the data into training and testing sets multiple times.
+Conclusion:
+The analysis provided valuable insights into the factors affecting Neeraj Chopra's javelin throw performance. The Random Forest and SVM models emerged as the most reliable predictors for future performance, capturing both linear and non-linear relationships in the data. These models can be utilized to forecast performance in upcoming events and help in strategic decision-making for training and competition planning.
 
-🔹 Improved Customer Satisfaction: Enhancements in service quality based on customer feedback resulted in higher satisfaction scores and increased customer loyalty.
+Recommendations:
 
-🔹 Optimized Resource Allocation: Better room allocation and inventory management reduced operational costs and improved efficiency.
-
-🔹 Enhanced Competitive Position: Data-driven insights provided a competitive edge, allowing for tailored services and promotional strategies that boosted market share.
-
-
-You can explore the detailed insights and findings from this project through the interactive dashboard 
-(https://app.powerbi.com/view?r=eyJrIjoiNTVjZjM1YjktMmVhOS00ZWJjLThhNDUtMjg4ODcwMmYxMmNlIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
-
-📌 Key Learnings from the Project:
-
-🔹 Developing Predictive Models for Demand Forecasting
-
-🔹 Implementing Dynamic Pricing Strategies 
-
-🔹 Creating Customer Segmentation for Targeted Marketing
-
-🔹 Designing Interactive Dashboards for Real-Time Monitoring 
-
-🔹 Enhancing Service Quality Through Data-Driven Feedback Analysis
+Feature Optimization: Further refinement of features like athlete's physical condition, weather conditions, and competition level could enhance the model's accuracy.
+Model Deployment: The best-performing models can be deployed in a real-time monitoring system to track and predict performance dynamically.
