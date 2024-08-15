@@ -20,28 +20,30 @@ Notebooks: Jupyter notebooks with interactive examples and explanations.
 ******Getting Started******
 Clone the Repository: To get started, clone this repository to your local machine using:
 
-bash
-Copy code
 git clone https://github.com/YourUsername/Machine-Learning.git
 
-Set Up Your Environment: Install the required libraries and dependencies. 
-You can use pip or conda to install the necessary packages. A typical setup might include:
+Set Up Your Environment: 
 
-bash
-Copy code
+Install the required libraries and dependencies. 
+
+You can use pip or conda to install the necessary packages.
+
+A typical setup might include:
+
 pip install numpy pandas scikit-learn matplotlib seaborn jupyter
 
 Explore the Content: Navigate through the repository to find tutorials, examples, and scripts.
+
 Open the Jupyter notebooks or Python scripts to view the content and run the code.
 
 Run the Notebooks: Open the Jupyter notebooks in your browser by running:
 
-bash
-Copy code
 jupyter notebook
+
 Select and execute the notebooks to explore machine learning concepts and techniques.
 
 Work with the Datasets: Use the provided datasets for training and testing your machine learning models. 
+
 Check the examples and scripts to understand how to preprocess and use the data.
 
 ******Key Topics******
