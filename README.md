@@ -1,10 +1,10 @@
-******Machine Learning Resources**
+**Machine Learning Resources**
 
 Welcome to the Machine Learning repository! 
 This repository contains various resources, tutorials, and examples to help you learn and apply machine learning techniques. 
 Whether you're a beginner or an experienced practitioner, you'll find valuable materials to enhance your skills.
 
-******Overview**
+******Overview******
 This repository includes:
 
 Tutorials: Step-by-step guides on key machine learning concepts, algorithms, and techniques.
@@ -39,7 +39,7 @@ Select and execute the notebooks to explore machine learning concepts and techni
 
 Work with the Datasets: Use the provided datasets for training and testing your machine learning models. Check the examples and scripts to understand how to preprocess and use the data.
 
-******Key Topics**
+******Key Topics******
 
 Supervised Learning: Techniques such as linear regression, logistic regression, decision trees, and support vector machines.
 
