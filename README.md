@@ -17,11 +17,6 @@ Scripts: Python scripts for implementing machine learning algorithms and models.
 
 Notebooks: Jupyter notebooks with interactive examples and explanations.
 
-******Getting Started******
-Clone the Repository: To get started, clone this repository to your local machine using:
-
-git clone https://github.com/YourUsername/Machine-Learning.git
-
 Set Up Your Environment: 
 
 Install the required libraries and dependencies. 
